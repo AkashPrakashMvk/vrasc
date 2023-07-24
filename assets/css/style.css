@@ -597,6 +597,7 @@ section {
 }
 
 .features .nav-link {
+ 
   border: 1px solid #d4d6df;
   padding: 15px;
   transition: 0.3s;
@@ -1590,4 +1591,7 @@ section {
   height:100%;
   width:100%;
   position:absolute;
+}
+.weight{
+  font-weight: bold;
 }
