@@ -94,7 +94,7 @@
       <video src="assets/video/Inintro.mp4" muted autoplay loop playsinline class="responsive-video"></video>
       
       <!-- Content on top of the video -->
-      <div class="carousel-container text-center" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+      <div class="carousel-container text-center" id="centered-text">
         <h2 class="animate__animated animate__fadeInDown weight">Welcome to <span>Vyjayanthi Arts and Sports Club</span></h2>
         <p class="animate__animated animate__fadeInUp weight">Where passion meets creativity and athleticism blends with artistry. Join us as we celebrate the power of expression through arts and the thrill of sports. Explore our vibrant community, diverse activities, and state-of-the-art facilities. Let your talents soar and your spirit thrive. Welcome to Vyjayanthi Arts and Sports Club - where dreams take flight!</p>
         <a class="btn-get-started">Hide</a>
@@ -104,6 +104,20 @@
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
       <!-- Your carousel content here -->
     </div>
+    
+    <script>
+      // Scroll to the "Content on top of the video" section when the page loads
+      window.onload = function() {
+        const centeredText = document.getElementById('centered-text');
+        if (centeredText) {
+          centeredText.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      };
+    </script>
+    
+    
+    
+    
     
       
     
