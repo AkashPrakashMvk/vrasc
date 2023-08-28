@@ -42,6 +42,8 @@
 
 <body>
 
+  
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -86,23 +88,25 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+  <section id="hero" class="d-flex flex-column justify-content-top align-items-center">
     
-    <video src="assets/video/Inintro.mp4"  muted autoplay width="100%" style="position: absolute;"></video>
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        
-        <div class="carousel-container ">
-        
-            <h2 class="animate__animated animate__fadeInDown weight">Welcome to  <span>Vyjayanthi Arts and Sports Club</span></h2>  
-            <p class="animate__animated fanimate__adeInUp weight">Where passion meets creativity and athleticism blends with artistry. Join us as we celebrate the power of expression through arts and the thrill of sports. Explore our vibrant community, diverse activities, and state-of-the-art facilities. Let your talents soar and your spirit thrive. Welcome to Vyjayanthi Arts and Sports Club - where dreams take flight!</p>
-            <a class="btn-get-started ">Hide</a>
-
-         
-        </div>
+    <div class="video-container">
+      <video src="assets/video/Inintro.mp4" muted autoplay loop playsinline class="responsive-video"></video>
+      
+      <!-- Content on top of the video -->
+      <div class="carousel-container text-center" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+        <h2 class="animate__animated animate__fadeInDown weight">Welcome to <span>Vyjayanthi Arts and Sports Club</span></h2>
+        <p class="animate__animated animate__fadeInUp weight">Where passion meets creativity and athleticism blends with artistry. Join us as we celebrate the power of expression through arts and the thrill of sports. Explore our vibrant community, diverse activities, and state-of-the-art facilities. Let your talents soar and your spirit thrive. Welcome to Vyjayanthi Arts and Sports Club - where dreams take flight!</p>
+        <a class="btn-get-started">Hide</a>
       </div>
+    </div>
+    
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+      <!-- Your carousel content here -->
+    </div>
+    
+      
+    
 
       <!-- Slide 2 -->
       <!-- <div class="carousel-item">
@@ -460,72 +464,79 @@
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
-
+    
         <div class="section-title" data-aos="zoom-out">
           <h2>Testimonials</h2>
           <p>What they are saying about us</p>
         </div>
-
+    
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-
+    
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  "Joining the VAASC club has been an incredible journey for me. The camaraderie and shared passion among members
+                  have made my college experience truly special. I'm grateful for the skills I've gained and the friendships I've
+                  forged."
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Aneesh</h3>
+                <h4>VAASC Club Member</h4>
               </div>
             </div><!-- End testimonial item -->
-
+    
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  "The VAASC club has been my anchor throughout college. It's a place where my creativity and ambitions have
+                  flourished. The mentorship and collaborative projects have shaped me into a more confident and capable individual."
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Bindhu</h3>
+                <h4>VAASC Club Member</h4>
               </div>
             </div><!-- End testimonial item -->
-
+    
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  "Being a part of the VAASC club has given me a sense of purpose beyond academics. The exposure to diverse
+                  perspectives and opportunities to lead projects have prepared me for the challenges of the real world."
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Vishnu</h3>
+                <h4>VAASC Club Member</h4>
               </div>
             </div><!-- End testimonial item -->
-
+    
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  "The VAASC club has provided me with a second family away from home. The unwavering support from fellow members
+                  has made my college journey in a foreign land so much smoother. I've not only grown personally but also made
+                  lifelong friends."
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Anto Mathew</h3>
+                <h4>VAASC Club Member</h4>
               </div>
             </div><!-- End testimonial item -->
-
+    
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  "The VAASC club's inclusive and welcoming environment has made my college journey memorable. I've learned, laughed,
+                  and collaborated with diverse individuals who share common goals."
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -533,13 +544,16 @@
                 <h4>Entrepreneur</h4>
               </div>
             </div><!-- End testimonial item -->
-
+    
+            <!-- Add more testimonials if needed -->
+    
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
+    
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
+    <!-- End Testimonials Section -->
 
     <!-- ======= Pricing Section ======= -->
     <!-- <section id="pricing" class="pricing">
@@ -760,7 +774,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>vinayakan</h4>
+                <h4>Vinayakan</h4>
                 <span>Secretary</span>
               </div>
             </div>
